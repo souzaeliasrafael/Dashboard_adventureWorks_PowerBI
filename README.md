@@ -144,20 +144,30 @@ Para a correta análise dos dados, serão definidos relacionamentos entre as tab
    
    DimProductCategory
 
-**Nota:** A tabela DimProductCategory necessitará de um relacionamento em cadeia com outras tabelas de produtos para garantir a integridade e a completude dos dados analisados.
+   **Nota:** A tabela DimProductCategory necessitará de um relacionamento em cadeia com outras tabelas de produtos para garantir a integridade e a completude dos dados analisados.
 
 7. **Relacionamentos Entre Tabelas**
 Para a correta análise dos dados no Power BI, é necessário definir relacionamentos entre as tabelas envolvidas. Aqui estão os relacionamentos principais que devem ser estabelecidos:
-FactInternetSales e DimCustomer
-Relacionar a coluna CustomerKey em FactInternetSales com a coluna CustomerKey em DimCustomer.
-FactInternetSales e DimGeography
-Relacionar a coluna CustomerKey em FactInternetSales com a coluna CustomerKey em DimCustomer.
-Em seguida, relacionar a coluna GeographyKey em DimCustomer com a coluna GeographyKey em DimGeography.
-FactInternetSales e DimProductCategory
-Relacionar a coluna ProductKey em FactInternetSales com a coluna ProductKey em DimProduct.
-Em seguida, relacionar a coluna ProductSubcategoryKey em DimProduct com a coluna ProductSubcategoryKey em DimProductSubcategory.
-Por fim, relacionar a coluna ProductCategoryKey em DimProductSubcategory com a coluna ProductCategoryKey em DimProductCategory.
-Esses relacionamentos permitirão a análise completa dos dados de vendas em relação aos clientes, localização geográfica e categorias de produtos.
+
+   FactInternetSales e DimCustomer
+   
+   Relacionar a coluna CustomerKey em FactInternetSales com a coluna CustomerKey em DimCustomer.
+   
+   FactInternetSales e DimGeography
+   
+   Relacionar a coluna CustomerKey em FactInternetSales com a coluna CustomerKey em DimCustomer.
+   
+   Em seguida, relacionar a coluna GeographyKey em DimCustomer com a coluna GeographyKey em DimGeography.
+   
+   FactInternetSales e DimProductCategory
+   
+   Relacionar a coluna ProductKey em FactInternetSales com a coluna ProductKey em DimProduct.
+   
+   Em seguida, relacionar a coluna ProductSubcategoryKey em DimProduct com a coluna ProductSubcategoryKey em DimProductSubcategory.
+   
+   Por fim, relacionar a coluna ProductCategoryKey em DimProductSubcategory com a coluna ProductCategoryKey em DimProductCategory.
+   
+   Esses relacionamentos permitirão a análise completa dos dados de vendas em relação aos clientes, localização geográfica e categorias de produtos.
 
 8. ***Criando Medidas no Power BI***
 Após a importação dos dados no Power BI, será necessário criar medidas (measures) para calcular os indicadores definidos. Aqui estão alguns exemplos de medidas que podem ser criadas:
