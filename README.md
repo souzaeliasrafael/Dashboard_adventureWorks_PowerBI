@@ -159,9 +159,10 @@ Em seguida, relacionar a coluna ProductSubcategoryKey em DimProduct com a coluna
 Por fim, relacionar a coluna ProductCategoryKey em DimProductSubcategory com a coluna ProductCategoryKey em DimProductCategory.
 Esses relacionamentos permitirão a análise completa dos dados de vendas em relação aos clientes, localização geográfica e categorias de produtos.
 
-8. Criando Medidas no Power BI
+8. ***Criando Medidas no Power BI***
 Após a importação dos dados no Power BI, será necessário criar medidas (measures) para calcular os indicadores definidos. Aqui estão alguns exemplos de medidas que podem ser criadas:
 
+```dax
 -- Receita Total
 Receita Total = SUM('FactInternetSales'[ValorVenda])
 
@@ -188,22 +189,24 @@ Quantidade Vendida por Mês = CALCULATE(SUM('FactInternetSales'[QuantidadeVendid
 
 -- Lucro por País
 Lucro por País = SUMMARIZE('FactInternetSales', 'DimGeography'[PaisCliente], "Lucro Total", SUM('FactInternetSales'[LucroVenda]))
+```
 
+9. **Criação dos Dashboards no Power BI**
 
-9. Criação dos Dashboards no Power BI
-Com os dados e medidas importados, é possível criar dashboards interativos no Power BI para visualizar os indicadores de forma clara e intuitiva. Aqui estão algumas sugestões de visualizações para cada aba:
-Aba Geral:
-Gráfico de barras para Receita Total por Categoria de Produto.
-Gráfico de linhas para Receita Total e Lucro Total por Mês.
-Cartão para exibir a Quantidade de Clientes.
-Gráfico de barras para Quantidade Vendida por Mês.
-Mapa para visualizar o Lucro por País.
-Aba Clientes:
-Mapa para exibir Vendas por País.
-Gráfico de barras empilhadas para Clientes por País.
-Gráfico de pizza para Vendas por Gênero.
-Gráfico de barras para Vendas por Categoria de Produto.
+   Com os dados e medidas importados, é possível criar dashboards interativos no Power BI para visualizar os indicadores de forma clara e intuitiva. Aqui estão algumas sugestões de visualizações para cada aba:
+   Aba Geral:
+   Gráfico de barras para Receita Total por Categoria de Produto.
+   Gráfico de linhas para Receita Total e Lucro Total por Mês.
+   Cartão para exibir a Quantidade de Clientes.
+   Gráfico de barras para Quantidade Vendida por Mês.
+   Mapa para visualizar o Lucro por País.
+   Aba Clientes:
+   Mapa para exibir Vendas por País.
+   Gráfico de barras empilhadas para Clientes por País.
+   Gráfico de pizza para Vendas por Gênero.
+   Gráfico de barras para Vendas por Categoria de Produto.
 
-10. Considerações Finais
-O projeto de integração entre SQL Server e Power BI utilizando o banco de dados AdventureWorks 2022 visa fornecer uma solução completa para análise de dados de vendas e clientes. Através da definição de indicadores, criação de views, estabelecimento de relacionamentos e desenvolvimento de dashboards, é possível obter insights valiosos que podem auxiliar na tomada de decisões estratégicas para a organização.
-
+10. **Considerações Finais**
+   
+      O projeto de integração entre SQL Server e Power BI utilizando o banco de dados AdventureWorks 2022 visa fornecer uma solução completa para análise de dados de vendas e clientes. Através da definição de indicadores, criação de views, estabelecimento de relacionamentos e desenvolvimento de dashboards, é possível obter insights valiosos que podem auxiliar na tomada de decisões estratégicas para a organização.
+      
