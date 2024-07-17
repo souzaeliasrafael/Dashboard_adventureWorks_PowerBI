@@ -219,4 +219,7 @@ Lucro por País = SUMMARIZE('FactInternetSales', 'DimGeography'[PaisCliente], "L
 10. **Considerações Finais**
    
       O projeto de integração entre SQL Server e Power BI utilizando o banco de dados AdventureWorks 2022 visa fornecer uma solução completa para análise de dados de vendas e clientes. Através da definição de indicadores, criação de views, estabelecimento de relacionamentos e desenvolvimento de dashboards, é possível obter insights valiosos que podem auxiliar na tomada de decisões estratégicas para a organização.
+
+**Segue algumas imagens do dashboard:**
+
       
