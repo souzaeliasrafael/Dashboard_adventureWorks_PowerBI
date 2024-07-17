@@ -5,59 +5,81 @@
 1. **Apresentação:**
  O projeto de integração entre SQL Server e Power BI tem como objetivo criar uma visualização analítica robusta e detalhada, utilizando o banco de dados AdventureWorks 2014. Este projeto permitirá a análise de diversos indicadores de performance relacionados às vendas e aos clientes, proporcionando insights valiosos para a tomada de decisões estratégicas.
 
-3. **Download do Banco de Dados AdventureWorks 2022:**
+2. **Download do Banco de Dados AdventureWorks 2022:**
  O banco de dados AdventureWorks 2022 pode ser baixado e configurado seguindo as instruções disponíveis no link oficial da Microsoft: AdventureWorks 2022 - Instruções de Instalação e Configuração.
 
-4. **Definindo os Indicadores do Projeto:**
+3. **Definindo os Indicadores do Projeto:**
 
-   a. Aba Geral:
+   **ABA GERAL:**
 
-    **Receita Total**
+    Receita Total;
 
-    **Quantidade Vendida**
+    Quantidade Vendida;
 
-    **Total de Categorias de Produtos**
+    Total de Categorias de Produtos;
 
-    **Quantidade de Clientes**
+    **Quantidade de Clientes;
 
-    **Receita Total e Lucro Total por Mês**
+    Receita Total e Lucro Total por Mês;
 
-    **Margem de Lucro**
+    Margem de Lucro;
 
-    **Quantidade Vendida por Mês**
+    Quantidade Vendida por Mês; e
 
-    **Lucro por País**
+    Lucro por País.
 
 
-   b. Aba Clientes:
 
-    **Vendas por País**
+   **ABA CLIENTES:**
 
-    **Clientes por País**
+    Vendas por País;
 
-    **Vendas por Gênero**
+    Clientes por País;
 
-    **Vendas por Categoria**
+    Vendas por Gênero; e
 
-6. **Definindo as Tabelas e Colunas a Serem Usadas no Projeto**
-Tabelas:
-FactInternetSales
-DimProductCategory
-DimCustomer
-DimGeography
-Colunas:
-SalesOrderNumber (FactInternetSales)
-OrderDate (FactInternetSales)
-EnglishProductCategoryName (DimProductCategory)
-CustomerKey (DimCustomer)
-FirstName + ' ' + LastName (DimCustomer)
-Gender (DimCustomer)
-EnglishCountryRegionName (DimGeography)
-OrderQuantity (FactInternetSales)
-SalesAmount (FactInternetSales)
-TotalProductCost (FactInternetSales)
-SalesAmount - TotalProductCost (FactInternetSales)
-7. Criando a View  vw_AnaliseVendas
+    Vendas por Categoria
+
+4. **Definindo as Tabelas e Colunas a Serem Usadas no Projeto**
+
+   **TABELAS:**
+   
+   FactInternetSales
+   
+   DimProductCategory
+   
+   DimCustomer
+
+   DimGeography
+   
+   **COLUNAS:**
+   
+   SalesOrderNumber (FactInternetSales)
+   
+   OrderDate (FactInternetSales)
+   
+   EnglishProductCategoryName (DimProductCategory)
+   
+   CustomerKey (DimCustomer)
+   
+   FirstName + ' ' + LastName (DimCustomer)
+
+   Gender (DimCustomer)
+   
+   EnglishCountryRegionName (DimGeography)
+   
+   OrderQuantity (FactInternetSales)
+   
+   SalesAmount (FactInternetSales)
+   
+   TotalProductCost (FactInternetSales)
+   
+   SalesAmount - TotalProductCost (FactInternetSales)
+
+
+
+5. **Criando a View  vw_AnaliseVendas**
+
 Para facilitar a visualização dos dados no Power BI, será criada uma view chamada vw_AnaliseVendas:
 
 ```sql
