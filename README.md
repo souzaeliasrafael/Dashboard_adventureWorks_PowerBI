@@ -80,7 +80,7 @@
 
 5. **Criando a View  vw_AnaliseVendas**
 
-Para facilitar a visualização dos dados no Power BI, será criada uma view chamada vw_AnaliseVendas:
+   Para facilitar a visualização dos dados no Power BI, será criada uma view chamada vw_AnaliseVendas:
 
 ```sql
 -- Criação ou alteração da view RESULTADOS_ADW
@@ -133,11 +133,16 @@ INNER JOIN DimGeography dg ON dc.GeographyKey = dg.GeographyKey
 ```
 6. **Relacionamentos Entre Tabelas**
 Para a correta análise dos dados, serão definidos relacionamentos entre as tabelas:
-Tabelas a Serem Analisadas:
-FactInternetSales
-DimCustomer
-DimSalesTerritory
-DimProductCategory
+
+   Tabelas a Serem Analisadas:
+   
+   FactInternetSales
+   
+   DimCustomer
+   
+   DimSalesTerritory
+   
+   DimProductCategory
 
 **Nota:** A tabela DimProductCategory necessitará de um relacionamento em cadeia com outras tabelas de produtos para garantir a integridade e a completude dos dados analisados.
 
