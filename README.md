@@ -1,6 +1,6 @@
 # DASHBOARD PRODUZIDO NO POWER BI
 
-[DASHBOARD INTERATIVO]()
+[DASHBOARD INTERATIVO]() - AINDA NÃO ATIVO
 
 [Base de dados](https://learn.microsoft.com/pt-br/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms&authuser=0)
 
